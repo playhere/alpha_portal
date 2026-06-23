@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGI Credit 智通金融科技 | 物業抵押貸款 · Full Stack AI Finance</title>
+  <meta name="description" content="AGI Credit 智通金融科技提供極速物業一按、二按、轉按及SME中小企貸款服務。最高貸款額3000萬，最快3小時放款。立即申請！">
+  <meta property="og:title" content="AGI Credit 智通金融科技 | Full Stack AI Finance">
+  <meta property="og:description" content="一按大，二按快。極速物業抵押貸款，1分鐘申請，15分鐘初審，最快3小時放款。">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="site-notice" id="site-notice">
+    <button class="site-notice__bar" type="button" aria-expanded="false">
+      <strong>特別通告</strong>
+      <span>有關偽冒職員之聲明</span>
+    </button>
+    <div class="site-notice__body">
+      <div>
+        <strong>特別通告</strong>
+        <h2>有關偽冒職員之聲明</h2>
+        <p>AGI Credit 發現近日有騙徒假冒本公司職員，並提供貸款服務。有關欺詐案件已報警跟進。AGI Credit提醒客戶，本公司只會邀請客戶到中環總行以及各據點內洽談以及遞交相關文件。客戶可於AGI Credit網頁查閱總行及各據點的地址。此外，客戶如對來電者身份有懷疑，可致電AGI Credit客戶服務熱線2377 7777核實其職員身份。客戶如有任何疑問，請致電AGI Credit客戶服務熱線2377 7777查詢。</p>
+      </div>
+      <button class="site-notice__close" type="button" aria-label="關閉特別通告">×</button>
+    </div>
+  </div>
+<!-- Top Bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__left">
+        <span class="topbar__slogan">Full Stack AI Finance</span>
+      </div>
+      <div class="topbar__right">
+        <div class="topbar__contact">
+          <span>📞</span>
+          <a href="tel:+85223777777">2377 7777</a>
+        </div>
+        <div class="topbar__contact">
+          <span style="color:#25D366">💬</span>
+          <a href="https://wa.me/85223777777" target="_blank">WhatsApp</a>
+        </div>
+        <nav class="social-links" aria-label="社交媒體">
+          <a class="social-links__item social-links__item--facebook" href="https://www.facebook.com/agicredit" target="_blank" rel="noopener" aria-label="Facebook"></a>
+          <a class="social-links__item social-links__item--instagram" href="https://www.instagram.com/agicredit" target="_blank" rel="noopener" aria-label="Instagram"></a>
+          <a class="social-links__item social-links__item--threads" href="https://www.threads.net/@agicredit" target="_blank" rel="noopener" aria-label="Threads"></a>
+          <a class="social-links__item social-links__item--rednote" href="https://www.xiaohongshu.com" target="_blank" rel="noopener" aria-label="小紅書"></a>
+        </nav>
+        <div class="lang-switch">
+          <button class="lang-switch__btn active" data-lang="zh-hk">繁</button>
+          <button class="lang-switch__btn" data-lang="zh-cn">简</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="theme-switch" id="theme-switch" title="切換風格">🌓</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.png" alt="AGI Credit 智通金融科技">
+      </a>
+      <nav class="header__nav">
+        <div class="nav__item">
+          <a class="nav__link" href="#"><span data-i18n="nav.products">貸款產品</span> <span class="nav__arrow">▾</span></a>
+          <div class="nav__dropdown">
+            <a class="nav__dropdown-link" href="products/first-mortgage.html" data-i18n="product.first_mortgage">一按</a>
+            <a class="nav__dropdown-link" href="products/second-mortgage.html" data-i18n="product.second_mortgage">二按</a>
+            <a class="nav__dropdown-link" href="products/refinance.html" data-i18n="product.refinance">七折 轉案</a>
+            <a class="nav__dropdown-link" href="products/equity-cashout.html" data-i18n="product.equity_cashout">加按 套現</a>
+            <a class="nav__dropdown-link" href="products/sme-loan.html" data-i18n="product.sme_loan">SME中小企貸款</a>
+            <a class="nav__dropdown-link" href="index.html#hero-form" data-i18n="product.owner_p_loan">業主P LOAN</a>
+            <a class="nav__dropdown-link" href="products/owner-loan.html" data-i18n="product.owner_loan">公司業主 LTV 95%</a>
+            <a class="nav__dropdown-link" href="index.html#hero-form" data-i18n="product.clear_card">清卡數</a>
+            <a class="nav__dropdown-link" href="products/tax-loan.html" data-i18n="product.tax_loan">單邊契3日 Draw</a>
+            <a class="nav__dropdown-link" href="index.html#hero-form" data-i18n="product.backup_credit">備用信貸額@唔用唔計利息</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="tools/calculator.html"><span data-i18n="nav.tools">貸款工具</span></a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="news.html"><span data-i18n="nav.news">財務資訊</span></a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="faq.html"><span data-i18n="nav.faq">常見問題</span></a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="contact.html"><span data-i18n="nav.contact">聯絡我們</span></a>
+        </div>
+      </nav>
+      <div class="header__actions">
+        <a href="#hero-form" class="btn btn--primary btn--sm" data-i18n="nav.apply">立即申請</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Showcase Marquee -->
+  <section class="showcase-marquee showcase-marquee--ticker" aria-label="AGI Credit service showcase">
+    <div class="showcase-marquee__viewport" id="showcase-marquee">
+      <div class="showcase-marquee__slide active">
+        <img src="img/first_big_second_fast.png" alt="一按大二按快">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide1">一按大，二按快</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/unlock2.png" alt="資產靈活解鎖">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide2">靈活解鎖物業價值</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/fast.png" alt="快速審批">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide3">快人一步完成審批</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/money time.png" alt="資金時間">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide4">把握資金黃金時間</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/debt.png" alt="債務整合">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide5">把壓力整合成清晰方案</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/debt2.png" alt="卡數壓力">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide6">用低息方案重整卡數</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/debt3.png" alt="財務整理">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide7">讓還款節奏重新可控</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/debt4.png" alt="重新出發">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide8">重整資金，重新出發</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/plane.png" alt="計劃起飛">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide9">讓計劃準時起飛</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/seize_opportunity.png" alt="把握機會">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide10">抓住稍縱即逝的機會</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/shake hand2.png" alt="專業合作">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide11">用專業建立可靠合作</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/ballon.png" alt="穩步向上">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide12">讓資金安排穩步向上</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/fast yellow man.png" alt="极速响应">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide13">以速度回應每個關鍵時刻</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/finger print.png" alt="安全核驗">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide14">安全核驗，審批更安心</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/finger2.png" alt="身份風控">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide15">智能風控守住每一步</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/superman.png" alt="關鍵時刻">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide16">在關鍵時刻給您支援</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__slide">
+        <img src="img/superman2.png" alt="強力支持">
+        <div class="showcase-marquee__shade"></div>
+        <div class="showcase-marquee__caption">
+          <strong data-i18n="marquee.slide17">為更大的目標補足力量</strong>
+        </div>
+      </div>
+      <div class="showcase-marquee__dots" aria-hidden="true">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__badge" data-i18n="hero.badge">Full Stack AI 持牌金融機構</span>
+        <h1 class="hero__title">
+          <span data-i18n="hero.title_1">一按大，</span><span class="highlight" data-i18n="hero.title_2">二按快</span>
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">3分鐘批核，最快3小時現金到手</p>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-value" data-i18n="hero.stat_1_value">3000萬</div>
+            <div class="hero__stat-label" data-i18n="hero.stat_1_label">最高貸款額</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value" data-i18n="hero.stat_2_value">9成</div>
+            <div class="hero__stat-label" data-i18n="hero.stat_2_label">最高成數</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value" data-i18n="hero.stat_3_value">5.8%</div>
+            <div class="hero__stat-label" data-i18n="hero.stat_3_label">最低利率</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-value" data-i18n="hero.stat_4_value">3小時</div>
+            <div class="hero__stat-label" data-i18n="hero.stat_4_label">極速放款</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__form-wrapper" id="hero-form">
+        <form class="hero__form" id="quick-apply-form">
+          <h3 class="hero__form-title"><span class="icon">⚡</span> <span data-i18n="form.title">極速申請</span></h3>
+          <div class="form-group">
+            <label for="input_loan_amount" data-i18n="form.loan_amount">貸款金額 (HK$)</label>
+            <input type="number" class="form-control" id="input_loan_amount" placeholder="e.g. 5000000" min="1" max="50000000">
+            <div class="form-error">請輸入有效金額 (1 - 50,000,000)</div>
+          </div>
+          <div class="form-group">
+            <label for="select_loan_category" data-i18n="form.loan_category">貸款類別</label>
+            <select class="form-control" id="select_loan_category">
+              <option value="" data-i18n="form.select_category">貸款類別</option>
+              <option value="first-mortgage" data-i18n="product.first_mortgage">一按</option>
+              <option value="second-mortgage" data-i18n="product.second_mortgage">二按</option>
+              <option value="refinance" data-i18n="product.refinance">七折 轉案</option>
+              <option value="equity-cashout" data-i18n="product.equity_cashout">加按 套現</option>
+              <option value="sme-loan" data-i18n="product.sme_loan">SME中小企貸款</option>
+              <option value="owner-p-loan" data-i18n="product.owner_p_loan">業主P LOAN</option>
+              <option value="owner-loan" data-i18n="product.owner_loan">公司業主 LTV 95%</option>
+              <option value="clear-card" data-i18n="product.clear_card">清卡數</option>
+              <option value="tax-loan" data-i18n="product.tax_loan">單邊契3日 Draw</option>
+              <option value="backup-credit" data-i18n="product.backup_credit">備用信貸額@唔用唔計利息</option>
+            </select>
+            <div class="form-error">貸款類別</div>
+          </div>
+          <div class="form-group">
+            <label for="select_loan_term" data-i18n="form.loan_term">還款期</label>
+            <select class="form-control" id="select_loan_term">
+              <option value="" data-i18n="form.select_term">還款期</option>
+              <option value="1" data-i18n="term.1">1 個月</option>
+              <option value="3" data-i18n="term.3">3 個月</option>
+              <option value="6" data-i18n="term.6">6 個月</option>
+              <option value="12" data-i18n="term.12">12 個月</option>
+              <option value="24" data-i18n="term.24">24 個月</option>
+              <option value="36" data-i18n="term.36">36 個月</option>
+              <option value="60" data-i18n="term.60">60 個月</option>
+              <option value="120" data-i18n="term.120">120 個月</option>
+            </select>
+            <div class="form-error">還款期</div>
+          </div>
+          <div class="form-group">
+            <label for="input_phone_number" data-i18n="form.phone">手機號碼</label>
+            <input type="tel" class="form-control" id="input_phone_number" placeholder="e.g. 23777777">
+            <div class="form-error">請輸入有效手機號碼</div>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="chk_accept_terms">
+            <label for="chk_accept_terms"><span data-i18n="form.terms">我已閱讀並同意</span> <a href="terms.html" data-i18n="form.terms_link">貸款申請條款</a> <span data-i18n="form.privacy">及</span> <a href="terms.html" data-i18n="form.privacy_link">私隱政策</a></label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="chk_marketing_consent">
+            <label for="chk_marketing_consent" data-i18n="form.marketing">同意接收推廣資訊</label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block btn--lg" id="btn_submit_lead" data-i18n="form.submit">立即申請</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section section--alt animate-on-scroll" id="products">
+    <div class="container">
+      <div class="section__title">
+        <h2 data-i18n="products.title">貸款產品</h2>
+        <p data-i18n="products.subtitle">多元化信貸方案，滿足不同資金需求</p>
+      </div>
+      <div class="product-grid">
+        <a href="products/first-mortgage.html" class="product-card">
+          <img src="img/building.png" alt="一按" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.first_mortgage">一按</h3>
+            <p class="product-card__desc" data-i18n="product.first_mortgage_desc">最高貸款額3000萬，成數高達9成，利息低至5.8%，最長120個月。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">最高3000萬</span>
+              <span class="product-card__tag">低至5.8%</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="products/second-mortgage.html" class="product-card">
+          <img src="img/unlock.png" alt="二按" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.second_mortgage">二按</h3>
+            <p class="product-card__desc" data-i18n="product.second_mortgage_desc">無需一按銀行同意，額度高達1,000萬，極速審批放款。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">免經銀行</span>
+              <span class="product-card__tag">極速放款</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="products/refinance.html" class="product-card">
+          <img src="img/reset.png" alt="七折 轉案" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.refinance">七折 轉案</h3>
+            <p class="product-card__desc" data-i18n="product.refinance_desc">清卡數、降息重組，將高息債務整合為低息物業貸款。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">清卡數</span>
+              <span class="product-card__tag">降息重組</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="products/equity-cashout.html" class="product-card">
+          <img src="img/low_interest_wealth.png" alt="加按 套現" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.equity_cashout">加按 套現</h3>
+            <p class="product-card__desc" data-i18n="product.equity_cashout_desc">低息樓按錢生錢，將物業升值部分轉化為流動資金。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">錢生錢</span>
+              <span class="product-card__tag">低息套現</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="products/sme-loan.html" class="product-card">
+          <img src="img/sme_turnover_interest.png" alt="SME中小企貸款" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.sme_loan">SME中小企貸款</h3>
+            <p class="product-card__desc" data-i18n="product.sme_loan_desc">利息低、審批快、還款活，解決企業緊急周轉。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">低息周轉</span>
+              <span class="product-card__tag">靈活還款</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="#hero-form" class="product-card">
+          <img src="img/standby_credit.png" alt="業主P LOAN" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.owner_p_loan">業主P LOAN</h3>
+            <p class="product-card__desc" data-i18n="product.owner_p_loan_desc">業主專屬私人貸款，免繁複按揭流程，快速調配家庭或生意周轉。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">業主專享</span>
+              <span class="product-card__tag">特快審批</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="products/owner-loan.html" class="product-card">
+          <img src="img/standby_credit.png" alt="公司業主 LTV 95%" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.owner_loan">公司業主 LTV 95%</h3>
+            <p class="product-card__desc" data-i18n="product.owner_loan_desc">公司持有人及物業業主專屬方案，按資產與現金流靈活評估。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">LTV 95%</span>
+              <span class="product-card__tag">公司業主</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="#hero-form" class="product-card">
+          <img src="img/card_debt_consolidation.png" alt="清卡數" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.clear_card">清卡數</h3>
+            <p class="product-card__desc" data-i18n="product.clear_card_desc">整合信用卡及高息債務，降低每月還款壓力，重整現金流。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">整合卡數</span>
+              <span class="product-card__tag">降月供</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="products/tax-loan.html" class="product-card">
+          <img src="img/3day_draw.jpg" alt="單邊契3日 Draw" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.tax_loan">單邊契3日 Draw</h3>
+            <p class="product-card__desc" data-i18n="product.tax_loan_desc">以物業文件與收入情況快速評估，短期資金需要可加快安排。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">3日 Draw</span>
+              <span class="product-card__tag">文件簡化</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+        <a href="#hero-form" class="product-card">
+          <img src="img/bak_credit.jpg" alt="備用信貸額@唔用唔計利息" class="product-card__img">
+          <div class="product-card__body">
+            <h3 class="product-card__title" data-i18n="product.backup_credit">備用信貸額@唔用唔計利息</h3>
+            <p class="product-card__desc" data-i18n="product.backup_credit_desc">先批核備用額度，需要時即用；未動用部分不計利息。</p>
+            <div class="product-card__highlights">
+              <span class="product-card__tag">唔用唔計息</span>
+              <span class="product-card__tag">備用額度</span>
+            </div>
+          </div>
+          <div class="product-card__footer">
+            <span class="btn btn--secondary btn--sm btn--block" data-i18n="product.learn_more">了解更多</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Point Section -->
+  <section class="pain-section animate-on-scroll">
+    <div class="container">
+      <div class="pain-section__content">
+        <h2 data-i18n="pain.title">資金困難？我們幫到你！</h2>
+        <ul class="pain-list">
+          <li data-i18n="pain.item1">卡數纏身，利息越滾越大？</li>
+          <li data-i18n="pain.item2">生意周轉急需資金？</li>
+          <li data-i18n="pain.item3">銀行審批太慢，等不及？</li>
+          <li data-i18n="pain.item4">物業有價，但現金不足？</li>
+        </ul>
+        <a href="#hero-form" class="btn btn--primary btn--lg" data-i18n="pain.cta">免費諮詢</a>
+      </div>
+      <div class="pain-section__image">
+        <img src="img/financial_trouble.png" alt="資金困難">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar animate-on-scroll">
+    <div class="container">
+      <div class="stat-item">
+        <div class="stat-item__value">10,000+</div>
+        <div class="stat-item__label" data-i18n="stats.clients">服務客戶</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__value">HK$50億+</div>
+        <div class="stat-item__label" data-i18n="stats.amount">累計放款</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__value">95%</div>
+        <div class="stat-item__label" data-i18n="stats.rate">批核率</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-item__value">3小時</div>
+        <div class="stat-item__label" data-i18n="stats.speed">平均放款</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="section video-showcase animate-on-scroll" id="video-showcase">
+    <div class="container">
+      <div class="section__title">
+        <h2>AGI Credit 服務短片</h2>
+        <p>快速了解我們如何協助客戶安排資金方案</p>
+      </div>
+      <div class="video-showcase__frame">
+        <video controls playsinline preload="metadata" poster="img/medias.jpg">
+          <source src="video/prompt.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="img/logo.png" alt="AGI Credit">
+          <div class="footer__slogan">Full Stack AI Finance</div>
+          <p class="footer__desc">AGI Credit — 為您提供智能化、全方位的物業抵押貸款及信貸服務。</p>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.products">貸款產品</h4>
+          <ul class="footer__links">
+            <li><a href="products/first-mortgage.html" data-i18n="product.first_mortgage">一按</a></li>
+            <li><a href="products/second-mortgage.html" data-i18n="product.second_mortgage">二按</a></li>
+            <li><a href="products/refinance.html" data-i18n="product.refinance">七折 轉案</a></li>
+            <li><a href="products/equity-cashout.html" data-i18n="product.equity_cashout">加按 套現</a></li>
+            <li><a href="products/sme-loan.html" data-i18n="product.sme_loan">SME中小企貸款</a></li>
+            <li><a href="index.html#hero-form" data-i18n="product.owner_p_loan">業主P LOAN</a></li>
+            <li><a href="products/owner-loan.html" data-i18n="product.owner_loan">公司業主 LTV 95%</a></li>
+            <li><a href="index.html#hero-form" data-i18n="product.clear_card">清卡數</a></li>
+            <li><a href="products/tax-loan.html" data-i18n="product.tax_loan">單邊契3日 Draw</a></li>
+            <li><a href="index.html#hero-form" data-i18n="product.backup_credit">備用信貸額@唔用唔計利息</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.tools">貸款工具</h4>
+          <ul class="footer__links">
+            <li><a href="tools/calculator.html" data-i18n="tool.calculator">貸款計算器</a></li>
+          </ul>
+          <h4 class="footer__heading mt-lg" data-i18n="footer.about">關於我們</h4>
+          <ul class="footer__links">
+            <li><a href="contact.html" data-i18n="footer.contact">聯絡我們</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">常見問題</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading" data-i18n="footer.terms">條款及私隱</h4>
+          <ul class="footer__links">
+            <li><a href="terms.html">私隱政策</a></li>
+            <li><a href="terms.html">貸款申請條款</a></li>
+          </ul>
+          <div class="mt-lg">
+            <a href="https://wa.me/85223777777" target="_blank" class="btn btn--whatsapp btn--sm">💬 WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__disclaimer" data-i18n="footer.disclaimer">投訴熱線: 6106 9997　忠告: 借錢梗要還，咪俾錢中介</p>
+        <p data-i18n="footer.copyright">© 2026 AGI Credit 智通金融科技。版權所有。</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/85223777777" target="_blank" class="whatsapp-float" title="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Mobile Bottom Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+85223777777">📞 致電</a>
+    <a href="https://wa.me/85223777777" class="btn--whatsapp">💬 WhatsApp</a>
+    <a href="#hero-form" class="btn--primary" data-i18n="nav.apply">立即申請</a>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal">
+      <div class="modal__icon">✅</div>
+      <h3 class="modal__title" data-i18n="modal.success_title">申請已提交！</h3>
+      <p class="modal__text" data-i18n="modal.success_text">我們的客戶經理將在15分鐘內透過電話或WhatsApp與您聯繫。</p>
+      <button class="btn btn--primary" onclick="closeModal()" data-i18n="modal.ok">確認</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

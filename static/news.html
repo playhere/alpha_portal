@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGI Credit 智通金融科技 | 財務資訊</title>
+  <meta name="description" content="AGI Credit 智通金融科技財務資訊，提供信貸、按揭及中小企周轉相關市場觀察。">
+  <meta property="og:title" content="AGI Credit 智通金融科技 | 財務資訊">
+  <meta property="og:description" content="查看最新財務資訊與信貸市場觀察。">
+  <meta property="og:image" content="img/logo.png">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="site-notice" id="site-notice">
+    <button class="site-notice__bar" type="button" aria-expanded="false">
+      <strong>特別通告</strong>
+      <span>有關偽冒職員之聲明</span>
+    </button>
+    <div class="site-notice__body">
+      <div>
+        <strong>特別通告</strong>
+        <h2>有關偽冒職員之聲明</h2>
+        <p>AGI Credit 發現近日有騙徒假冒本公司職員，並提供貸款服務。有關欺詐案件已報警跟進。AGI Credit提醒客戶，本公司只會邀請客戶到中環總行以及各據點內洽談以及遞交相關文件。客戶可於AGI Credit網頁查閱總行及各據點的地址。此外，客戶如對來電者身份有懷疑，可致電AGI Credit客戶服務熱線2377 7777核實其職員身份。客戶如有任何疑問，請致電AGI Credit客戶服務熱線2377 7777查詢。</p>
+      </div>
+      <button class="site-notice__close" type="button" aria-label="關閉特別通告">×</button>
+    </div>
+  </div>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__left">
+        <span class="topbar__slogan">Full Stack AI Finance</span>
+      </div>
+      <div class="topbar__right">
+        <div class="topbar__contact">
+          <span>電話</span>
+          <a href="tel:+85223777777">2377 7777</a>
+        </div>
+        <div class="topbar__contact">
+          <span>WhatsApp</span>
+          <a href="https://wa.me/85223777777" target="_blank">即時查詢</a>
+        </div>
+        <nav class="social-links" aria-label="社交媒體">
+          <a class="social-links__item social-links__item--facebook" href="https://www.facebook.com/agicredit" target="_blank" rel="noopener" aria-label="Facebook"></a>
+          <a class="social-links__item social-links__item--instagram" href="https://www.instagram.com/agicredit" target="_blank" rel="noopener" aria-label="Instagram"></a>
+          <a class="social-links__item social-links__item--threads" href="https://www.threads.net/@agicredit" target="_blank" rel="noopener" aria-label="Threads"></a>
+          <a class="social-links__item social-links__item--rednote" href="https://www.xiaohongshu.com" target="_blank" rel="noopener" aria-label="小紅書"></a>
+        </nav>
+        <div class="lang-switch">
+          <button class="lang-switch__btn active" data-lang="zh-hk">繁</button>
+          <button class="lang-switch__btn" data-lang="zh-cn">简</button>
+          <button class="lang-switch__btn" data-lang="en">EN</button>
+        </div>
+        <button class="theme-switch" id="theme-switch" title="切換風格">◐</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="header__logo">
+        <img src="img/logo.png" alt="AGI Credit 智通金融科技">
+      </a>
+      <nav class="header__nav">
+        <div class="nav__item">
+          <a class="nav__link" href="#"><span data-i18n="nav.products">貸款產品</span> <span class="nav__arrow">▾</span></a>
+          <div class="nav__dropdown">
+            <a class="nav__dropdown-link" href="products/first-mortgage.html" data-i18n="product.first_mortgage">一按</a>
+            <a class="nav__dropdown-link" href="products/second-mortgage.html" data-i18n="product.second_mortgage">二按</a>
+            <a class="nav__dropdown-link" href="products/refinance.html" data-i18n="product.refinance">七折 轉案</a>
+            <a class="nav__dropdown-link" href="products/equity-cashout.html" data-i18n="product.equity_cashout">加按 套現</a>
+            <a class="nav__dropdown-link" href="products/sme-loan.html" data-i18n="product.sme_loan">SME中小企貸款</a>
+            <a class="nav__dropdown-link" href="index.html#hero-form" data-i18n="product.owner_p_loan">業主P LOAN</a>
+            <a class="nav__dropdown-link" href="products/owner-loan.html" data-i18n="product.owner_loan">公司業主 LTV 95%</a>
+            <a class="nav__dropdown-link" href="index.html#hero-form" data-i18n="product.clear_card">清卡數</a>
+            <a class="nav__dropdown-link" href="products/tax-loan.html" data-i18n="product.tax_loan">單邊契3日 Draw</a>
+            <a class="nav__dropdown-link" href="index.html#hero-form" data-i18n="product.backup_credit">備用信貸額@唔用唔計利息</a>
+          </div>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="tools/calculator.html"><span data-i18n="nav.tools">貸款工具</span></a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link active" href="news.html"><span data-i18n="nav.news">財務資訊</span></a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="faq.html"><span data-i18n="nav.faq">常見問題</span></a>
+        </div>
+        <div class="nav__item">
+          <a class="nav__link" href="contact.html"><span data-i18n="nav.contact">關於我們</span></a>
+        </div>
+      </nav>
+      <div class="header__actions">
+        <a href="index.html#hero-form" class="btn btn--primary btn--sm" data-i18n="nav.apply">立即申請</a>
+      </div>
+      <button class="mobile-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="product-hero news-hero">
+    <div class="container">
+      <div class="product-hero__content">
+        <span class="hero__badge">Market Brief</span>
+        <h1 class="product-hero__title">財務資訊</h1>
+        <p class="product-hero__desc">整理近期信貸、按揭與企業周轉市場動態，幫您更快看清資金安排的重點。</p>
+      </div>
+      <div class="product-hero__image">
+        <img src="img/card_debt_consolidation.png" alt="財務資訊">
+      </div>
+    </div>
+  </section>
+
+  <main class="section news-section">
+    <div class="container">
+      <div class="news-list">
+        <details class="news-card" open>
+          <summary>
+            <span class="news-card__date">2026.06.16</span>
+            <strong>市場資金成本回落，轉按查詢升溫</strong>
+            <p>近期部分資金渠道報價較年初更靈活，已有業主開始比較現有貸款與新方案。</p>
+          </summary>
+          <div class="news-card__body">
+            <p>在利率預期趨穩的背景下，轉按與加按需求重新活躍。對仍在高息私人貸款或信用卡循環利息中的客戶，重新整合為物業抵押方案，通常可改善每月現金流。實際可批額度仍需視乎物業估值、現有按揭餘額、入息與還款紀錄。</p>
+          </div>
+        </details>
+
+        <details class="news-card">
+          <summary>
+            <span class="news-card__date">2026.06.12</span>
+            <strong>中小企旺季備貨，短期周轉需求增加</strong>
+            <p>零售、餐飲及跨境服務行業在旺季前常需要預留現金流，避免採購與出糧時間錯配。</p>
+          </summary>
+          <div class="news-card__body">
+            <p>SME中小企貸款不只看營業額，也會綜合考慮公司流水、訂單穩定性、業主背景及負債水平。若資金需求有明確用途，例如採購、租金、稅款或短期薪金安排，較容易制定清晰還款節奏。</p>
+          </div>
+        </details>
+
+        <details class="news-card">
+          <summary>
+            <span class="news-card__date">2026.06.08</span>
+            <strong>卡數整合重點：先降月供，再控總息</strong>
+            <p>債務整合不是單純借新還舊，核心是把還款節奏拉回可管理範圍。</p>
+          </summary>
+          <div class="news-card__body">
+            <p>若客戶同時持有多張信用卡、私人貸款與短期欠款，第一步應先計算每月最低還款、實際年利率與可承受月供。以物業或穩定收入作基礎的整合方案，可降低短期壓力，但仍需避免重新累積高息債務。</p>
+          </div>
+        </details>
+
+        <details class="news-card">
+          <summary>
+            <span class="news-card__date">2026.06.03</span>
+            <strong>申請前備齊文件，可明顯縮短批核時間</strong>
+            <p>身份、物業、入息和現有負債資料越完整，初步評估越快。</p>
+          </summary>
+          <div class="news-card__body">
+            <p>常見文件包括身份證明、住址證明、物業資料、現有按揭或貸款月結單、入息證明及銀行流水。若申請人是公司東主，還可先準備商業登記、最近營運流水及主要合約或發票，以便顧問快速判斷可行方案。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p class="footer__disclaimer" data-i18n="footer.disclaimer">投訴熱線: 6106 9997　忠告: 借錢梗要還，咪俾錢中介</p>
+        <p data-i18n="footer.copyright">© 2026 AGI Credit 智通金融科技。版權所有。</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/85223777777" target="_blank" class="whatsapp-float" title="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <div class="mobile-bottom-bar">
+    <a href="tel:+85223777777">致電</a>
+    <a href="https://wa.me/85223777777" class="btn--whatsapp">WhatsApp</a>
+    <a href="index.html#hero-form" class="btn--primary" data-i18n="nav.apply">立即申請</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
